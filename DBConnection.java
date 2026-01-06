@@ -12,7 +12,6 @@ public class DBConnection {
         Connection con = null;
 
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(URL, USER, PASS);
         } catch (Exception e) {
             System.out.println("Database Connection Error: " + e.getMessage());
