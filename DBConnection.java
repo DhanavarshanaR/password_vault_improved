@@ -3,7 +3,7 @@ import java.sql.DriverManager;
 
 public class DBConnection {
 
-    private static final String URL = "jdbc:mariadb://localhost:3306/password_vault";
+    private static final String URL = "jdbc:mysql://localhost:3306/password_vault";
     private static final String USER = "root";
     private static final String PASS = "Dhana@mint1234";
 
@@ -12,7 +12,7 @@ public class DBConnection {
         Connection con = null;
 
         try {
-            Class.forName("org.mariadb.jdbc.Driver");
+            Class.forName("com.mysql.cj.jdbc.Driver");
             con = DriverManager.getConnection(URL, USER, PASS);
         } catch (Exception e) {
             System.out.println("Database Connection Error: " + e.getMessage());
