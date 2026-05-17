@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class DashboardUI {
 
-    private Scanner sc = new Scanner(System.in);
+    private Scanner sc = InputScanner.sc;
     private AddPasswordUI addUI = new AddPasswordUI();
     private ViewPasswordUI viewUI = new ViewPasswordUI();
     private UpdatePasswordUI updateUI = new UpdatePasswordUI();

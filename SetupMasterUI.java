@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class SetupMasterUI {
 
     private MasterPasswordService masterService = new MasterPasswordService();
-    private Scanner sc = new Scanner(System.in);
+    private Scanner sc = InputScanner.sc;
 
     public void setup() {
 

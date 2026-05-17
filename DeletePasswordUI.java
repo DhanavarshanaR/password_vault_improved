@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class DeletePasswordUI {
 
     private PasswordVaultService vaultService = new PasswordVaultService();
-    private Scanner sc = new Scanner(System.in);
+    private Scanner sc = InputScanner.sc;
 
     public void deletePassword() {
 
