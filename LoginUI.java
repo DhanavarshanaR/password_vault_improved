@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class LoginUI {
 
     private MasterPasswordService masterService = new MasterPasswordService();
-    private Scanner sc = InputScanner.sc;
+    private Scanner sc = new Scanner(System.in);
 
     public boolean login() {
 

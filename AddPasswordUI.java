@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class AddPasswordUI {
 
     private PasswordVaultService vaultService = new PasswordVaultService();
-    private Scanner sc = InputScanner.sc;
+    private Scanner sc = new Scanner(System.in);
 
     public void addPassword() {
 
